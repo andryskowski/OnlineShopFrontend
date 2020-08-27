@@ -129,10 +129,6 @@ ol > li:hover > ul{
 }
 
 .fa-bars {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    
     display: none;
 }
 
@@ -193,6 +189,7 @@ ol > li:hover > ul{
         height: 100vh;
         display: none;
         padding-left: 20px;
+        
     }
 
     .products {
@@ -211,7 +208,6 @@ ol > li:hover > ul{
         top: 20px;
         right: 20px;
         display: block;
-        
         
     }
 
