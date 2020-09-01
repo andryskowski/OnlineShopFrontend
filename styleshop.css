@@ -38,17 +38,12 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
-
     background-color: white;
     width: 100%;
     z-index: 1000;
     border-bottom: 0.5px black solid;
     box-sizing: border-box;
-    
-    
 }
 
 ol{
@@ -64,9 +59,6 @@ ul{
     display: none;
     line-height: normal;
     list-style-type: none;
-    
-    
-    
 }
 
 ol > li{
@@ -77,15 +69,11 @@ ol >li:hover{
     margin-bottom: 20px;
 } 
 
-
-
 ol > li:hover > ul{
     display: block;
     
     
 }
-
-
 
 .logo {
     height: 60px;
@@ -113,9 +101,6 @@ ol > li:hover > ul{
     cursor: default;
 }
 
-
-
-
 .sold-out:hover::before {
     content: "SOLD OUT";
     position: absolute;
@@ -140,6 +125,51 @@ ol > li:hover > ul{
     display: none;
 }
 
+.product-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.product-info2{
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+.small-image{
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.first{
+    margin-left: 30px;
+    opacity: 1;
+}
+
+.small-image img{
+    
+    margin-top: 2%;
+    margin-left: 6%;
+    width: 40px;
+    height: 40px;
+}
+
+.sizees{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.sizees h1{
+    border: 0.5px black solid;
+    width: 35px;
+    text-align: center;
+    margin-left: 2%;
+    font-size: 1.3em;
+    font-weight: normal;
+}
 
 @media only screen and (max-width : 536px) {
 
@@ -147,36 +177,7 @@ ol > li:hover > ul{
     .logo {
         display: none;
     }
-/* 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        border: 2px black solid;
-        box-sizing: border-box;
-        display: none;
-    }
 
-    li {
-        padding-left: 20px;
-        width: 100%;
-        line-height: 60px;
-        border-bottom: 2px black solid;
-
-
-    }
-
-    li:last-child {
-        border-bottom: 0px;
-    }
-
-    li:hover {
-        background-color: black;
-        color: white;
-    } */
 
     ol{
         flex-direction: column;
@@ -220,5 +221,22 @@ ol > li:hover > ul{
         font-size: 0px;
     }
 
+    .add-to-bag{
+        background-color: black;
+        color:white;
+        padding: 20px;
+        text-align: center;
+        box-sizing:border-box;
+        width: 87%;
+        margin: auto;
+        margin-top: 2%;
+        font-family: sans-serif;
+        font-size: 0.9em;
+    }
 
+    .product p{
+        width: 80%;
+        margin: auto;
+        margin-top: 2%;
+    }
 }
